@@ -3,7 +3,7 @@ Uses the reboot to payload system to launch payloads from User Page applet.
 
 Works on atmosphere. Should also work on sx and reinx.
 
-![Img](screenshot.jpg)
+![Img](https://i.imgur.com/HUqNwyf.jpg)
 
 ### How to install
 1. Download [this zip](https://cdn.discordapp.com/attachments/495894801040801792/538817816166662154/userpagepayload.zip) and extract the contents to `sdmc:/atmosphere`
