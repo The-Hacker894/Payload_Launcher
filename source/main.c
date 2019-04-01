@@ -121,7 +121,7 @@ char* addstrings(const char *s1, const char *s2){
 
 void refreshscreen(){
     consoleInit(NULL);
-    printf("\x1b[40m\x1b[40;1HFavorite a payload (Y)\nLaunch favorite payload (X)\nSelect payload (A)\nCancel (B)\nAdd selected payload as reboot_payload for Atmosphere (Minus)\nQuit (Plus)");
+    printf("\x1b[40m\x1b[40;1HFavorite a payload (Y)\nLaunch favorite payload (X)\nSelect payload (A)\nCancel (B)\nAdd selected payload as reboot_payload for Atmosphere (Minus)\nQuit (HOME)");
     printf("\x1b[1;1HPayload launcher (Reboot to payload++). \nCurrent dir: %s\n---------------------------------------\n", location);
     cursorchange = true;
 }
@@ -284,8 +284,7 @@ int main(int argc, char* argv[])
         hidScanInput();
         u64 kDown = hidKeysDown(CONTROLLER_P1_AUTO);
 
-        if (kDown & KEY_PLUS)
-            break;
+		// KEY_PLUS conditional statement removed since I have this NRO file accessible through the User Page applet.
 
         if (kDown & KEY_B){
        		remove("payload_config.ini");
