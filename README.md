@@ -6,7 +6,7 @@ Works on atmosphere. Should also work on sx and reinx.
 ![Img](screenshot.jpg)
 
 ### How to install
-1. Download [this zip]() and extract the contents to `sdmc:/atmosphere`
+1. Download [this zip](https://cdn.discordapp.com/attachments/495894801040801792/538817816166662154/userpagepayload.zip) and extract the contents to `sdmc:/atmosphere`
 2. Download `Payload_launcher.nro` and rename it to `reboot_to_payload.nro`
 3. Move the now renamed `reboot_to_payload.nro` to `sdmc:/atmosphere/`
 4. Create a folder called `payloads` on the root on the sd card and place your payload.bin files in there
